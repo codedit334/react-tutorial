@@ -56,7 +56,7 @@ export default function Todo() {
 
   return (
     <div className="todo-list">
-      <input className="todo-input" />
+      <input className="todo-input" placeholder="Todo item" />
       <ul className="todo-data">
         {
           arr.map((item) => (
