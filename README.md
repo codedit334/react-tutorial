@@ -1,35 +1,227 @@
-## How to solve this challenge?
+<a name="readme-top"></a>
 
-1. Read the "Challenge description" below.
-2. Make changes to the [challenge.js](./challenge.js) file.
-3. Commit your changes.
-4. Wait for the result of the "GitHub Classroom Workflow" action. If it is green - congratulations, you solved this challenge! If not - try again!
-5.  *You can watch an example of how to solve a challenge in the video linked in the theoretical lesson preceding this challenge.*
+<div align="center">
+
+  <h3><b>Module 3: React Tutorial</b></h3>
+
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 React Tutorial <a name="about-project"></a>
+
+React Tutorial is a project where i rebuild the todo app using ReactJS.
+
+## 🛠 Built With <a name="built-with"></a>
+HTML, CSS, NodeJS v18, ReactJS
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Structure</summary>
+  <ul>
+    <li><a href="https://html.com/">HTML</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Style</summary>
+  <ul>
+    <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Front-end framwork</summary>
+  <ul>
+    <li><a href="https://webpack.js.org/">ReactJS</a></li>
+  </ul>
+</details>
 
 
-## Challenge description
+<details>
+<summary>Linters</summary>
+  <ul>
+    <li><a href="https://webhint.io/">Webhint</a></li>
+    <li><a href="https://stylelint.io/">Stylelint</a></li>
+    <li><a href="https://eslint.org/">ESLint</a></li>
+  </ul>
+</details>
 
-### Basic Recursion
 
-You will be given a positive integer number . Fill in the method sum so that it adds up all the positive integers up to number and returns the sum.
-For example, when given 4 it should return 10 (4+3+2+1).
+<!-- Features -->
 
-While there are other ways to solve this challenge, you should use recursion to get the sum.
+### Key Features <a name="key-features"></a>
 
-#### Examples
+- Virtual DOM.
 
-```js
-console.log(sum(4))
-// => (4 + 3 + 2 + 1) = 10
+- JSX.
 
-console.log(sum(10))
-// => 55
+- Components.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- Comming soon...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+  
+  
+### Prerequisites
+
+In order to run this project you need:
+  Open terminal on the same folder of the project and run:
+```sh
+ npm install
 ```
 
-Get stuck and need some hint?
-Check this link: https://gitlab.com/microverse/guides/coding_challenges/hints/blob/master/challenges/recursion/basic-recursion.md
+### Setup
+
+Clone this repository to your desired folder:
+```sh
+  cd my-folder
+  git clone git@github.com/codedit334/react-tutorial.git
+```
+### Install
+
+Install this project with:
+```sh
+  cd react-tutorial
+  npm install
+```
+
+### Usage
+
+Run in development mode (Port 3000)
+
+```
+  npm run start
+```
+
+### Build for production
+
+```
+npm run build
+```
+
+### Run tests
+
+- ### Linter Tests
+
+To run tests, run the following command:
+
+To check for html errors run:
+```sh
+  npx hint .
+```
+To check for css errors run:
+```sh
+  npx stylelint "**/*.{css,scss}"
+```
+To check for js errors run:
+```sh
+  npx eslint "**/*.{js,jsx}"
+```
 
 
-### Troubleshooting
+<!-- AUTHORS -->
 
-If you cannot see any auto-grading workflows on the [Actions](../../actions) page, learn how to fix it in [this repo](https://github.com/microverse-students/autograding-troubles-js/blob/main/README.md).
+## 👥 Authors <a name="authors"></a>
+
+👤 Author1
+
+- GitHub: [@codedit334](https://github.com/codedit334)
+- Twitter: [@oussedit](https://twitter.com/oussedit)
+- LinkedIn: [Oussama Elabdioui](https://www.linkedin.com/in/oussama-elabdioui-4677a41b6/)
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- Add Style.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/codedit334/react-tutorial/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project send your feedback to encourage me to do more.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse for offering me this opportunity to learn, and practice my skills.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+-Why use linters?
+
+  - The use of linters helps to diagnose and fix technical issues, also linters can help teams achieve a more readable and consistent style, through the enforcement of its rules.
+
+-Why use ReactsJS?
+
+  - React has reusable Components.
+  - React uses Virtual DOM.
+  - React has a large ecosystem.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/codedit334/react-tutorial/blob/main/LICENSE) licensed.
+(Check the LICENSE file)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
