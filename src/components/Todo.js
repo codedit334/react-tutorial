@@ -10,6 +10,7 @@ export default function Todo() {
     const newArr = arr.filter((item) => +item.id !== +id);
 
     setArr(newArr);
+    localStorage.setItem('arr', JSON.stringify(newArr));
   };
 
   const handleCheck = (e) => {
@@ -24,6 +25,7 @@ export default function Todo() {
     });
 
     setArr(newArr);
+    localStorage.setItem('arr', JSON.stringify(newArr));
   };
 
   const handleChange = (e) => {
@@ -37,6 +39,7 @@ export default function Todo() {
     });
 
     setArr(newArr);
+    localStorage.setItem('arr', JSON.stringify(newArr));
   };
 
   useEffect(() => {
@@ -50,36 +53,45 @@ export default function Todo() {
 
         const newArr = [...arr, newObj];
         setArr(newArr);
+        localStorage.setItem('arr', JSON.stringify(newArr));
       }
     });
   }, [arr, setArr]);
 
+  useEffect(() => {
+    setArr(JSON.parse(localStorage.getItem('arr')) || []);
+  }, []);
   return (
     <div className="todo-list">
       <input className="todo-input" placeholder="Todo item" />
       <ul className="todo-data">
-        {
-          arr.map((item) => (
-            <li data-id={item.id} key={item.id.toString()} className="todo-data-li">
-              <span className="todo-data-item-wrapper">
-                <input className="todo-data-check" type="checkbox" checked={item.completed} onClick={handleCheck} />
-                <input
-                  value={item.todo}
-                  onChange={handleChange}
-                  className={
-                      item.completed
-                        ? 'todo-data-item strike'
-                        : 'todo-data-item'
-                    }
-                />
-              </span>
+        {arr.map((item) => (
+          <li
+            data-id={item.id}
+            key={item.id.toString()}
+            className="todo-data-li"
+          >
+            <span className="todo-data-item-wrapper">
+              <input
+                className="todo-data-check"
+                type="checkbox"
+                checked={item.completed}
+                onClick={handleCheck}
+              />
+              <input
+                value={item.todo}
+                onChange={handleChange}
+                className={
+                  item.completed ? 'todo-data-item strike' : 'todo-data-item'
+                }
+              />
+            </span>
 
-              <span className="x" onClick={handleClick}>{/* eslint-disable-line */}
-                &times;
-              </span>
-            </li>
-          ))
-}
+            <span className="x" onClick={handleClick}>{/* eslint-disable-line */}
+              &times;
+            </span>
+          </li>
+        ))}
       </ul>
     </div>
   );
