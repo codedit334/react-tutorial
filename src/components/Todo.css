@@ -1,0 +1,60 @@
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+
+.todo-list {
+  font-family: "COCOGOOSE", sans-serif;
+  width: 450px;
+  height: 250px;
+  padding: 30px;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+}
+
+.todo-input,
+.todo-data {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-data {
+  height: 85%;
+}
+
+.todo-input {
+  padding: 8px;
+  width: 97%;
+}
+
+.todo-input:focus {
+  outline: none;
+  border: none;
+}
+
+.todo-data-li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-data-item {
+  padding: 8px;
+  background-color: red;
+  width: 80%;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.todo-data-item:focus {
+  border: none;
+  outline: none;
+}
+
+.x {
+  font-size: 140%;
+  cursor: pointer;
+}
+
+.strike {
+  text-decoration: line-through;
+}
